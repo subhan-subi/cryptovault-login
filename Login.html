@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <section class="container " id="xyz">
+        <div class="row">
+            <div class="col-12 col-md-7 cl"><br>
+                <div style="background-color: rgba(196, 112, 34, 0.863); padding: 10px; border-radius: 10px;">CV</div>
+                <br>
+                <h3 style="font-size: xx-large;">CryptoVault</h3>
+                <p>your services gateway to the world <br>of cryptocurrency trading and portfolio<br> manegement</p>
+                <div class="lo">
+                    <div class="new1"><img src="https://cdn-icons-png.flaticon.com/128/18502/18502262.png"> Bank-grade
+                        security with 2FA protection</div><br>
+                    <div class="new1"><img src="https://cdn-icons-png.flaticon.com/128/17029/17029815.png"> Bank-grade
+                        security with 2FA protection</div><br>
+                    <div class="new1"><img src="https://cdn-icons-png.flaticon.com/128/4347/4347510.png"> Bank-grade
+                        security with 2FA protection</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5  gap-3 p-5 text-white ne">
+                <form class="row">
+                    <div class="d-flex flex-column align-items-center">
+                        <h4>Welcome Back</h4>
+                        <p>Enter your details to access your acount</p>
+
+                    </div>
+
+                    <div class="d-flex justify-content-center bg-dark p-1  fl">
+                        <button>Sign in</button>
+                        <button class="bg-dark text-white" onclick="Loginpage()">Sign Up</button>
+
+                    </div>
+
+                    <div class="in">
+
+                        <lable>Email</lable>
+                        <img src="https://cdn-icons-png.flaticon.com/128/16935/16935745.png">
+                        <input id="em" class="bg-dark" type="email" placeholder="example@gmail.com">
+
+                    </div>
+                    <div class="in">
+
+                        <lable>password </lable>
+                        <img src="https://cdn-icons-png.flaticon.com/128/3064/3064155.png">
+                        <input id="pass" class="bg-dark" type="password" placeholder="Emter password">
+
+
+                    </div>
+                    <div class="d-flex  new ">
+                        <label> <input id="t3" type="checkbox">Remember me</label>
+                        <a href="#">Forgot password</a>
+                    </div>
+                    <button style="font-weight: bold;" onclick="loginvali()">Sign in</button>
+                    <p id="lvali"></p>
+                    <div class=" d-flex align-items-center my-3">
+
+                        <hr class="flex-grow-1 "><span class="mx-2 "> or continue with</span>
+                        <hr class="flex-grow-1">
+                    </div>
+                    <div class="d-flex gap-3 sp">
+                        <span class="">
+                            <img class="g"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcbdcygTuiOxXn4wxD2L82CI-VDHzX4edm1w&s">
+                            Goggle
+                        </span>
+                        <span class=""> <img class="g"
+                                src="data:image/png;base64,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">
+                            Apple
+                        </span>
+                    </div>
+                    <div class="n"><br>dont have an acount?<a href="#" id="ide1">Sign up for free</a><br><br><br>
+                        Copeywrite @ 2026 CryptoVault.com
+                    </div>
+                </form>
+            </div>
+
+
+
+    </section>
+
+    <section class="container" style="display: none;" id="xyz1">
+        <div class="row">
+
+            <div class="col-12 col-md-7 cl"><br><br>
+                <h2 style="font-size: 50px; font-style: inherit">Start your journey</h2><br>
+                <br>
+                <img src="https://cdn-icons-png.flaticon.com/128/6163/6163469.png">
+                <br>
+
+
+
+                <h4 style="font-weight: bold; font-size: 30px;">Join CryptoVault</h4>
+                <br><br>
+                <img style="width: 250px;" src="https://cdn-icons-png.flaticon.com/128/7072/7072492.png">
+                <br><br>
+                <p style="font-size: xx-large;">Creat your acount and start managing your crypto securely.</p>
+
+            </div>
+
+            <div class="col-12 col-md-5  gap-3 p-5 text-white ne">
+                <form class="row">
+                    <div class="d-flex flex-column align-items-center">
+                        <h4>Join Fast</h4>
+                        <p>Enter your details and creat acount</p>
+
+                    </div>
+                    <div class="d-flex justify-content-center bg-dark p-1  fl">
+                        <button class="bg-dark text-white" type="button" onclick="signup()">Sign IN</button>
+                        <button class=" " type="submit">Sing Up</button>
+                    </div>
+                    <div class="in">
+                        <lable>full Name</lable>
+                        <img src="https://cdn-icons-png.flaticon.com/128/10628/10628940.png">
+                        <input id="name" class="bg-dark" type="name" placeholder="Ennter Username">
+                        <small id="UER"></small>
+                    </div>
+
+                    <div class="in">
+                        <lable>Email</lable>
+                        <img src="https://cdn-icons-png.flaticon.com/128/16935/16935745.png">
+                        <input id="em2" class="bg-dark" type="Email" placeholder="example@gmail.com">
+                        <small id="EER"></small>
+                    </div>
+
+                    <div class="in">
+                        <lable>password </lable>
+                        <img src="https://cdn-icons-png.flaticon.com/128/3064/3064155.png">
+                        <input id="pass1" class="bg-dark" type="password" placeholder="Emter password">
+                        <small id="PER"></small>
+                    </div>
+
+                    <div class="in">
+                        <lable>confirm password </lable>
+                        <img src="https://cdn-icons-png.flaticon.com/128/3064/3064155.png">
+                        <input id="pass3" class="bg-dark" type="password" placeholder="Emter confirm password">
+                        <small id="CPR"></small>
+                    </div>
+
+                    <div class="d-flex  new ">
+                        <label> <input id="terms" type="checkbox"> I agree to terms</label>
+
+                    </div>
+                    <button type="button" style="font-weight: bold;" onclick="validation()">Sign up</button>
+                    <small id="vali"></small>
+
+                    <div class=" d-flex align-items-center my-3">
+                        <hr class="flex-grow-1 "><span class="mx-2 "> or continue with</span>
+                        <hr class="flex-grow-1">
+                    </div>
+
+                    <div class="d-flex gap-3 sp">
+                        <span class="">
+                            <img class="g"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcbdcygTuiOxXn4wxD2L82CI-VDHzX4edm1w&s">
+                            Goggle
+                        </span>
+                        <span class=""> <img class="g"
+                                src="data:image/png;base64,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">
+                            Apple
+                        </span>
+                    </div>
+                    <div class="n"><br>Already have acount?<a href="#" id="ide">Login here</a><br><br><br>
+                        Copeywrite @ 2026 CryptoVault.com
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="login.js"></script>
+</body>
+
+</html>

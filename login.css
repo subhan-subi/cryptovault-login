@@ -1,0 +1,130 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.cl {
+    background-color: rgb(252, 139, 34);
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    align-items: center;
+    box-shadow: 0 0 10px;
+}
+
+.in input {
+    padding: 10px 0px 10px 30px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.ne {
+
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(252, 139, 34);
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.fl {
+    border-radius: 10px;
+}
+
+.fl button {
+    flex: 1;
+    border: none;
+    font-weight: bold;
+}
+
+.in {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+
+}
+
+input {
+    color: white;
+}
+
+.in img {
+    margin-top: 42px;
+    margin-left: 10px;
+    position: absolute;
+    width: 15px;
+}
+
+.im2 {
+    left: 1150px;
+}
+
+.new {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 14px;
+
+}
+
+.new a {
+    text-decoration: none;
+    color: rgb(252, 139, 34);
+
+}
+
+.new1 img {
+    width: 30px;
+    background-color: rgba(196, 112, 34, 0.863);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.g {
+    width: 30px;
+}
+
+.sp span {
+    background-color: aliceblue;
+    padding: 5px;
+    color: black;
+    flex: 1;
+
+    border-radius: 10px;
+    text-align: center;
+}
+
+.n {
+    text-align: center;
+
+}
+
+.n a {
+    text-decoration: none;
+    color: rgb(252, 139, 34);
+}
+
+@media (max-width:768px) {
+
+    .new {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
