@@ -1,5 +1,5 @@
-# cryptovault-login
-Interactive authentication UI featuring Login and Signup forms, built with HTML, CSS, and JavaScript.
+#practice project cryptovault-ui-Demo
+Interactive no real authentication UI featuring Login and Signup forms, built with HTML, CSS, and JavaScript.
 Technologies Used:
 - HTML5
 - CSS3
